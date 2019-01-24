@@ -1,0 +1,343 @@
+html
+{
+    /*overflow: scroll;*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+
+body
+{
+
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #fff;
+}
+
+/*nav........................................................................*/
+#logo {
+    float: left;
+    display: inline-block;
+}
+.name{
+    font-size: 30px;
+    color: #8491a8;
+    /*padding-top: 100px;*/
+    padding-left: 70px;
+}
+.nameT{
+    font-size: 14px;
+    color: gray;
+
+}
+.clear {
+    clear: both;
+}
+
+
+#nav {
+    background-color: transparent;  /*turns nav bar white*/
+    color: white;
+    width: 100%;
+
+}
+.nav {
+    float: right;
+   padding-right: 45px;
+    list-style: none;
+    text-align: left;
+
+    margin: 0;
+}
+.nav > li {
+    display:Inline-block;
+}
+
+.nav > li a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #8491a8;
+    border-radius: 20px;
+}
+
+.nav > li > a:hover {
+    color: black;
+     background-color: transparent;
+}
+
+.nav>li>a:hover {
+    text-decoration: none;
+    /* background-color: #eee; */
+}
+
+/*greeting................................................*/
+
+.bold {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    font-size: 100px;
+    color: #8491a8;
+    font-weight: 700;
+    font-family: 'EB Garamond', serif;
+
+}
+
+@media screen and (max-width: 768px) {
+    .bold {
+        font-size: 80px; } }
+
+
+/*.specialty{*/
+    /*font-size: 20px;*/
+    /**/
+    /*text-align: center;*/
+    /*padding-top: 30px;*/
+    /*font-family: 'EB Garamond', serif;*/
+    /*color: #8491a8;*/
+/*}*/
+
+
+
+@media screen and (max-width: 650px){
+    .greeting {
+        width: 90%;}
+}
+@media screen and (max-width: 1340px){
+    .specialty {
+        float: none;
+        width: auto;
+    }
+}
+
+/*filters................................................................*/
+.portfolio-section{
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+.portfolio-filter {
+    list-style: none;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.portfolio-filter li {
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    color: #8491a8;
+    cursor: pointer;
+
+}
+
+.portfolio-filter li.mixitup-control-active {
+    color: #001418;
+}
+
+/*..portfolio...................................................*/
+.portfolio-item {
+    display: block;
+    width: 100%;
+    /*height: 100%;*/
+    background-position: center center;
+    position: relative;
+    margin-bottom: 10px;
+    /*background-color: #E2E0E0;*/
+}
+
+
+
+.portfolio-item .pi-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /*box-shadow:0 0 3px #c0c0c0;*/
+    background: transparent;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+
+.portfolio-item .pi-inner h2 {
+    opacity: 0;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 50px;
+    bottom: 30px;
+    color: #fff;
+    letter-spacing: 10px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.portfolio-item:hover .pi-inner {
+    background: rgba(0, 20, 24, 0.8);
+}
+
+.portfolio-item:hover .pi-inner h2 {
+    opacity: 1;
+    letter-spacing: 0;
+}
+
+.portfolio-img{
+    width:100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-top: 0;
+}
+
+
+.titles{
+    font-size: 35px;
+    color: #8491a8;
+    font-weight: bold;
+    text-align: center;
+
+
+}
+/*Single portfolio description......................*/
+
+/*Datamea*/
+.datamea{
+    padding: 30px;
+    align-content: center;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.project-info{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 18px;
+}
+.info{
+    text-align: right;
+}
+.info1{
+    text-align: left;
+}
+
+/*about..................................................*/
+/*resume.......................*/
+
+.resume {
+    background-color: #8491a8;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    padding: 5px 16px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.resume:hover {
+    background-color: #d7cac9;
+}
+
+
+/*footer.......................................................*/
+.footer-title{
+    font-size: 20px;
+}
+.copyright{
+    font-size: 12px;
+    color: #8491a8;
+}
+.other-links{
+color: #8491a8;
+    word-spacing: 20px;
+}
+.icons{
+    color: #8491a8;
+}
+
+.email{
+    text-align: center;
+    color: #8491a8;
+
+}
+.contact{
+    color: #8491a8;
+
+}
+.links{
+    color: #8491a8;
+    word-spacing: 25px;
+}
+
+/*other*/
+.process{
+    font-size: 40px;
+}
+.processPics{
+    width: 500px;
+}
+.processPics-blog{
+    width: 300px;
+}
+/*.blog-img{*/
+    /*width: 195px;*/
+    /*margin-left: 77px;*/
+/*}*/
+
+/*landing page img*/
+
+/*.OpenH-img{*/
+
+    /*padding-right: 50px !important;*/
+
+
+/*}*/
+/*.DataMea-img{*/
+    /*padding-left: 50px !important;*/
+    /*padding-right: 10px !important;*/
+/*}*/
+/*.col-lg-6{*/
+    /*padding-left: 60px !important;*/
+/*}*/
+/*.dataMeaCol{*/
+    /*padding-top: 45px;*/
+/*}*/
+/*.openHCol{*/
+    /*padding-top: 45px;*/
+    /*padding-left: 3px !important;*/
+    /*padding-right: 60px !important;*/
+
+/*}*/
+/*.mobileLCol{*/
+    /*padding-left: 3px !important;*/
+    /*padding-right: 60px !important;*/
+/*}*/
+/*.plowedCol{*/
+    /*padding-left: 3px !important;*/
+    /*padding-right: 60px !important;*/
+/*}*/
+/*.col-lg-12{*/
+    /*padding-left: 60px !important;*/
+    /*padding-right: 60px !important;*/
+/*}*/
+.col-sm-8{
+padding-top: 30px;
+}
+
